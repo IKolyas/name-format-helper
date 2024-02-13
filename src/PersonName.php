@@ -22,12 +22,11 @@ final class PersonName
 
     final public function fullShort(): string
     {
-        $getSubstr = fn (?string $str) => $str ? mb_strtoupper(mb_substr($str, 0, 1)) . '.' : null;
+        $getSubstr = fn(?string $str) => $str ? mb_strtoupper(mb_substr($str, 0, 1)) . '.' : null;
 
         $nameList = [$this->surname, $getSubstr($this->name) . $getSubstr($this->patronymic)];
 
         return join(' ', array_filter($nameList));
-
     }
 
     final public function long(): string
