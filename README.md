@@ -14,8 +14,8 @@ composer require i-kolyas/person-name-format
 
 ```php
 $userName = new PersonName(surname: 'Сидоров', firstname: 'Пётр', patronymic: 'Николаевич');
-echo $userName->short(); // Сидоров П.
-echo $userName->fullShort(); // Сидоров П.Н.
-echo $userName->long(); // Сидоров Пётр
-echo $userName->fullLong(); // Сидоров Пётр Николаевич
+echo $userName->short() . PHP_EOL; // Сидоров П.
+echo $userName->fullShort() . PHP_EOL; // Сидоров П.Н.
+echo $userName->long() . PHP_EOL; // Сидоров Пётр
+echo $userName->fullLong() . PHP_EOL; // Сидоров Пётр Николаевич
 ```
