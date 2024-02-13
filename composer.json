@@ -1,9 +1,9 @@
 {
-    "name": "van4ik/name-format-helper",
+    "name": "i-kolyas/person-name-format",
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Van4ik\\NameFormatHelper\\": "src/"
+            "IKolyas\\PersonNameFormat\\": "src/"
         }
     },
     "authors": [
@@ -12,5 +12,7 @@
             "email": "i.kolyasnikov@mail.ru"
         }
     ],
-    "require": {}
+    "require": {
+        "ext-mbstring": "*"
+    }
 }
