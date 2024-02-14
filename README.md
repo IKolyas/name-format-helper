@@ -2,10 +2,6 @@
 
 Генерирует имена пользователей в заданном формате
 
-## Требования
-
-- PHP >= 8.1
-
 ## Установка
 
 composer require i-kolyas/person-name-format
